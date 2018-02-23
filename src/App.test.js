@@ -20,10 +20,6 @@ describe('<Foo />', () => {
     expect(wrapper.find('.main-overlay-ff').length).toBeGreaterThan(0);
   });
   it('renders one main-overlay-ff', () => {
-    const wrapper = render(<Content />);
-    expect(wrapper.find('.main-overlay-ff').length).toBeGreaterThan(0);
-  });
-  it('renders one main-overlay-ff', () => {
     const wrapper = mount(<Content />);
     const cta = wrapper.find('.one_third_action').forEach((node) => {
       console.log(node.prop('onClick'))
